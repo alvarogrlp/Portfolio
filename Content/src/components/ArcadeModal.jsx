@@ -498,7 +498,7 @@ class BreakerGame extends GameBase {
 class InvadersGame extends GameBase {
     constructor(canvas, callbacks, t) {
         super(canvas, callbacks, t);
-        this.player = { x: this.width/2, y: this.height - 40, w: 30, h: 20 };
+        this.player = { x: this.width/2 - 15, y: this.height - 40, w: 30, h: 20 };
         this.bullets = [];
         this.enemyBullets = [];
         this.enemies = [];
@@ -519,12 +519,26 @@ class InvadersGame extends GameBase {
 
     spawnEnemies() {
         this.enemies = [];
+        // Responsive grid calculation
+        const enemyW = 30;
+        const gap = 15;
+        const margin = 10;
+        
+        // Calculate how many columns fit
+        const availableWidth = this.width - (margin * 2);
+        const maxCols = Math.floor(availableWidth / (enemyW + gap));
+        const cols = Math.min(8, Math.max(4, maxCols)); // Min 4, Max 8
+        
+        // Center the block
+        const totalBlockWidth = (cols * enemyW) + ((cols - 1) * gap);
+        const startX = (this.width - totalBlockWidth) / 2;
+
         for(let r=0; r<4; r++) {
-            for(let c=0; c<8; c++) {
+            for(let c=0; c<cols; c++) {
                 this.enemies.push({
-                    x: 50 + c * 60,
+                    x: startX + c * (enemyW + gap),
                     y: 50 + r * 40,
-                    w: 30, h: 20,
+                    w: enemyW, h: 20,
                     active: true,
                     type: r // 0-3, used for color
                 });
@@ -568,7 +582,7 @@ class InvadersGame extends GameBase {
             let moveDown = false;
             for (const e of activeEnemies) {
                 e.x += this.enemySpeed * this.enemyDir * 5; // Move in steps
-                if(e.x > this.width - 40 || e.x < 10) moveDown = true;
+                if(e.x > this.width - 35 || e.x < 5) moveDown = true;
             }
 
             if(moveDown) {
