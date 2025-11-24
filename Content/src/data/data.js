@@ -59,7 +59,7 @@ export const TRANSLATIONS = {
             desc: "Desarrollador de aplicaciones con fuerte orientación al aprendizaje práctico. Disfruto programar, diseñar interfaces funcionales y enfrentar desafíos tecnológicos.",
             cta: "VER MIS PROYECTOS"
         },
-        nav: { home: "Inicio", about: "Sobre Mí", services: "Habilidades", stack: "Tecnologías", projects: "Proyectos" },
+        nav: { home: "Inicio", about: "Sobre Mí", services: "Habilidades", stack: "Tecnologías", projects: "Proyectos", arcade: "Arcade" },
         about: {
             title: "Sobre Mí",
             desc1: "Soy desarrollador de aplicaciones con una fuerte orientación al aprendizaje práctico y la resolución de problemas. Me motiva comprender a fondo el funcionamiento de la tecnología y transformar ideas en herramientas reales.",
@@ -102,6 +102,26 @@ export const TRANSLATIONS = {
         contact: {
             text: "¿Hablamos?",
             btn: "Contactar Ahora"
+        },
+        retro_machine: {
+            title: "ZONA RETRO",
+            insert_coin: "INSERT COIN"
+        },
+        arcade: {
+            title: "NEON ARCADE",
+            exit: "SALIR",
+            score: "PUNTOS",
+            game_over: "JUEGO TERMINADO",
+            final_score: "PUNTUACIÓN FINAL",
+            retry: "REINTENTAR",
+            press_start: "PULSA ESPACIO PARA SACAR",
+            games: {
+                snake: { title: "NEON SNAKE", desc: "Clásico relajado. Recolecta energía." },
+                pong: { title: "CYBER PONG", desc: "Duelo suave contra la IA." },
+                breaker: { title: "DATA BREAKER", desc: "Destruye los cortafuegos." },
+                invaders: { title: "CYBER INVADERS", desc: "Defiende la base. Disparo auto." },
+                tetris: { title: "NEON BLOCKS", desc: "Puzzle de encaje geométrico." }
+            }
         }
     },
     en: {
@@ -112,7 +132,7 @@ export const TRANSLATIONS = {
             desc: "Application developer with a strong focus on practical learning. I enjoy programming, designing functional interfaces, and facing technological challenges.",
             cta: "VIEW PROJECTS"
         },
-        nav: { home: "Home", about: "About", services: "Skills", stack: "Stack", projects: "Projects" },
+        nav: { home: "Home", about: "About", services: "Skills", stack: "Stack", projects: "Projects", arcade: "Arcade" },
         about: {
             title: "About Me",
             desc1: "I am an application developer with a strong focus on practical learning and problem-solving. I am motivated by deeply understanding how technology works and transforming ideas into real tools.",
@@ -155,6 +175,26 @@ export const TRANSLATIONS = {
         contact: {
             text: "Let's talk?",
             btn: "Contact Now"
+        },
+        retro_machine: {
+            title: "RETRO ZONE",
+            insert_coin: "INSERT COIN"
+        },
+        arcade: {
+            title: "NEON ARCADE",
+            exit: "EXIT",
+            score: "SCORE",
+            game_over: "GAME OVER",
+            final_score: "FINAL SCORE",
+            retry: "RETRY",
+            press_start: "PRESS SPACE TO SERVE",
+            games: {
+                snake: { title: "NEON SNAKE", desc: "Relaxed classic. Collect energy." },
+                pong: { title: "CYBER PONG", desc: "Smooth duel against AI." },
+                breaker: { title: "DATA BREAKER", desc: "Destroy the firewalls." },
+                invaders: { title: "CYBER INVADERS", desc: "Defend the base. Auto shoot." },
+                tetris: { title: "NEON BLOCKS", desc: "Geometric puzzle fitting." }
+            }
         }
     }
 };

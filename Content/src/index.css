@@ -28,3 +28,28 @@ h1, h2, h3, button {
 .custom-scrollbar::-webkit-scrollbar { width: 6px; }
 .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
 .custom-scrollbar::-webkit-scrollbar-thumb { background: #4f46e5; border-radius: 10px; }
+
+/* Glitch Button Effect */
+.btn-glitch {
+    position: relative;
+    overflow: hidden;
+    text-shadow: 2px 2px 0px #ff00ff, -2px -2px 0px #00ffff;
+    animation: glitch-btn 3s infinite alternate;
+}
+
+@keyframes glitch-btn {
+    0% { text-shadow: 2px 2px 0px #ff00ff, -2px -2px 0px #00ffff; }
+    25% { text-shadow: -2px 2px 0px #ff00ff, 2px -2px 0px #00ffff; }
+    50% { text-shadow: 2px -2px 0px #ff00ff, -2px 2px 0px #00ffff; }
+    75% { text-shadow: -2px -2px 0px #ff00ff, 2px 2px 0px #00ffff; }
+    100% { text-shadow: 2px 2px 0px #ff00ff, -2px -2px 0px #00ffff; }
+}
+
+.scanlines-static {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5));
+    background-size: 100% 4px;
+    pointer-events: none;
+    z-index: 10;
+}
