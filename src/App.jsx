@@ -242,7 +242,7 @@ const App = () => {
                 </section>
 
                 {/* RETRO ARCADE SECTION */}
-                <section id="arcade-section" className="py-20 relative overflow-hidden scroll-mt-96">
+                <section id="arcade-section" className="py-20 mt-32 relative overflow-hidden scroll-mt-96">
                     <div className="flex items-center gap-4 mb-12">
                         <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500">
                             {t.retro_machine.title}

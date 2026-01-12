@@ -5,6 +5,7 @@ import {
 
 export const DATA = {
     links: {
+        vinia: "https://github.com/alvarogrlp/VinIA",
         marvel: "https://github.com/alvarogrlp/simuladorDeMarvel",
         calc: "https://github.com/alvarogrlp/calculadora",
         ahorcado: "https://github.com/alvarogrlp/AhorcadoPHP"
@@ -12,6 +13,13 @@ export const DATA = {
 };
 
 export const PROJECTS = [
+    {
+        id: "vinia",
+        color: "bg-emerald-600",
+        link: DATA.links.vinia,
+        tags: ["Java", "Spring", "AI"],
+        tech: ["java", "spring"]
+    },
     {
         id: "marvel",
         color: "bg-orange-500",
@@ -38,14 +46,13 @@ export const PROJECTS = [
 export const TECH_STACK = {
     core: [
         { id: "java", name: "Java", icon: Code, color: "bg-orange-500" },
+        { id: "spring", name: "Spring", icon: Layers, color: "bg-green-500" },
+        { id: "flutter", name: "Flutter", icon: Smartphone, color: "bg-blue-400" },
         { id: "react-native", name: "React Native", icon: Smartphone, color: "bg-cyan-500" },
         { id: "expo", name: "Expo", icon: Layers, color: "bg-white" },
-        { id: "php", name: "PHP", icon: Code, color: "bg-indigo-500" },
-        { id: "mysql", name: "MySQL", icon: Database, color: "bg-blue-600" }
+        { id: "php", name: "PHP", icon: Code, color: "bg-indigo-500" }
     ],
     learning: [
-        { id: "spring", name: "Spring", icon: Layers, color: "bg-green-500" },
-        { id: "python", name: "Python", icon: Code, color: "bg-yellow-500" },
         { id: "angular", name: "Angular", icon: Globe, color: "bg-red-500" }
     ]
 };
@@ -85,6 +92,10 @@ export const TRANSLATIONS = {
             empty: "Aún no hay misiones documentadas para esta tecnología.",
             view: "Ver Código",
             items: {
+                vinia: {
+                    title: "VinIA",
+                    desc: "Java + Spring + AI. Plataforma de gestión inteligente potenciada por Inteligencia Artificial."
+                },
                 marvel: {
                     title: "Simulador Marvel",
                     desc: "Java + JavaFX. Combates estratégicos con habilidades activas/pasivas y estadísticas visuales."
@@ -158,6 +169,10 @@ export const TRANSLATIONS = {
             empty: "No documented missions for this tech yet.",
             view: "View Code",
             items: {
+                vinia: {
+                    title: "VinIA",
+                    desc: "Java + Spring + AI. Intelligent management platform powered by Artificial Intelligence."
+                },
                 marvel: {
                     title: "Marvel Simulator",
                     desc: "Java + JavaFX. Strategic combat with active/passive skills and visual stats."
